@@ -1,0 +1,55 @@
+body {
+    background-color: #7be07b;
+    background-image: url("background.png");
+}
+
+div#baralhoJogador1,div#baralhoJogador2 {
+    background-image: url(fundo-carta.jpg);
+    background-size: 155px;
+    width: 155px;
+    height: 235px;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px #002d51 inset;
+}
+
+div#baralhoJogador2 {
+    right: 10px;
+    bottom: 10px;
+}
+
+div#carta {
+    background: url(cartas/inicio.png);
+    background-repeat: no-repeat;
+    width: 240px;
+    background-size: 240px;
+    height: 386px;
+    position: absolute;
+    left: calc(50% - 120px);
+    top: calc(50% - 193px);
+    border-radius: 30px;
+}
+
+div#carta ul {
+    /* background: red; */
+    margin-top: 233px;
+    list-style: none;
+    padding: 0;
+}
+
+div#carta li {
+ 
+    margin-top: 2px;
+    display: block;
+    height: 25px;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+
+div#carta li:hover{
+
+      background: rgba(0, 0, 0, 0.41);
+}
+  
