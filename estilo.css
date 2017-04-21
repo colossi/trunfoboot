@@ -1,17 +1,19 @@
 body {
-    background-color: #7be07b;
+    background-color: #000000;
     background-image: url("background.png");
+    font-family: arial;
 }
 
 div#baralhoJogador1,div#baralhoJogador2 {
-    background-image: url(fundo-carta.jpg);
+    /* background-image: url(fundo-carta.jpg); */
     background-size: 155px;
+    background: #d54137;
     width: 155px;
     height: 235px;
     background-repeat: no-repeat;
     position: absolute;
-    border-radius: 20px;
-    box-shadow: 0 0 20px 5px #002d51 inset;
+    border-radius: 35px;
+    box-shadow: 0 0 20px 0px #585858;
 }
 
 div#baralhoJogador2 {
@@ -21,14 +23,16 @@ div#baralhoJogador2 {
 
 div#carta {
     background: url(cartas/inicio.png);
-    background-repeat: no-repeat;
+    background-color: #000;
+    background-repeat: no-repeat !important;
     width: 240px;
-    background-size: 240px;
+    background-size: 243px !important;
     height: 386px;
     position: absolute;
     left: calc(50% - 120px);
     top: calc(50% - 193px);
-    border-radius: 30px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 20px 0px #2e2e2e;
 }
 
 div#carta ul {
@@ -52,4 +56,75 @@ div#carta li:hover{
 
       background: rgba(0, 0, 0, 0.41);
 }
-  
+
+div#novo-jogo-conteiner,
+div#fim-jogo-conteiner {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    background: #f2ca01;
+    margin-left: calc(50% - 200px);
+    top: calc(50% - 100px);
+    border: 10px solid #6288c6;
+}
+
+div#fim-jogo-conteiner{
+    display:none;
+}
+
+button#btn-novo-jogo,
+#btn-novo-jogo-2 {
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background: #d54137;
+    border: none;
+    box-shadow: 0px 5px 0px 0px #b93f36;
+    color: #fff;
+    cursor: pointer;
+    outline:none;
+}
+
+#btn-novo-jogo-2{
+     margin-top: 15px;
+}
+
+#btn-novo-jogo-2:active{
+    margin-top: 20px;
+    box-shadow: 0px 0px 0px 0px #b93f36;
+}
+
+button#btn-novo-jogo:active {
+    margin-top: 55px;
+    box-shadow: 0px 0px 0px 0px #b93f36;
+   
+}
+
+span.contador {
+    font-size: 45px;
+    color: #fff;
+    font-family: arial;
+    width: 155px;
+    display: block;
+    text-align: center;
+    padding-top: 85px;
+}
+
+div#baralhoJogador2 {
+    background: #2c60aa;
+}
+
+div#fim-jogo-conteiner
+ h1 {
+    color: #444;
+    text-align: center;
+    margin:5px 0px;
+}
+
+h3#ganhador {
+    text-align: center;
+    color: #d54137;
+    margin:0px
+}
